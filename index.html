@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dropdown Menu with Search Box</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  
+</head>
+<body>
+  <!--for nav bar -->
+  <div class="wrapper">
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <!-- <img src="fast-moving-empty-box-with-wheels-4230ld-removebg-preview.png"> -->
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Feed</a></li>
+          <li>
+            <a href="#" class="desktop-link">Categories</a>
+            <input type="checkbox" id="show-features">
+            <label for="show-features">Categories</label>
+            <ul>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="desktop-link">Support</a>
+            <input type="checkbox" id="show-services">
+          <!--  <label for="show-services">Support</label>
+            <ul>
+              <li><a href="#">Drop Menu 1</a></li>
+              <li><a href="#">Drop Menu 2</a></li>
+              <li><a href="#">Drop Menu 3</a></li>
+              <li>
+                <a href="#" class="desktop-link">More Items</a>
+                <input type="checkbox" id="show-items">
+                <label for="show-items">More Items</label>
+                <ul>
+                  <li><a href="#">Sub Menu 1</a></li>
+                  <li><a href="#">Sub Menu 2</a></li>
+                  <li><a href="#">Sub Menu 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li> -->
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </div>
+      <label for="show-search" class="search-icon"><i class="fa fa-search"></i></label>
+      <form action="#" class="search-box">
+        <input type="text" placeholder="Type Something to Search..." required>
+        <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+      </form>
+    </nav>
+  </div>
+  <!-- for upper part-->
+  <section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text-1">Welcome to,</div>
+            <div class="text-2">S Cube</div>
+            <div class="text-3">Explore our sections: <span class="typing"></span></div>
+            <a href="#">Explore Now &#8594;</a>
+        </div>
+    </div>
+    <div class="upperpartimg">
+      <img src="3.jpeg" alt="upperpartimg" width="300" height="350">
+    </div>
+  </section>
+
+  <!-------------------Category---------------->
+    <div class="categories">
+      <div class="small-container">
+        <div class="row"><center>
+          <div class="col-3">
+            <img src="category-1.jpg" alt="">
+          </div>
+          <div class="col-3">
+            <img src="category-2.jpg" alt="">
+          </div>
+          <div class="col-3">
+            <img src="category-3.jpg" alt="">
+          </div></center>
+        </div>
+      </div>
+    </div>
+
+    <!-------Products-------->
+    <div class="small-container">  
+      <h2 class="title">New Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="product-1.jpg" alt="">
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 250</p>
+        </div>
+        <div class="col-4">
+          <img src="product-5.jpg" alt="">
+          <h4>High Ankel Shoe</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 999</p>
+        </div>
+        <div class="col-4">
+          <img src="product-12.jpg" alt="">
+          <h4>Gym Lower</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 399</p>
+        </div>
+        <div class="col-4">
+          <img src="product-9.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div>
+      </div>
+      <h2 class="title">Trending Products</h2>
+      <div class="row">
+        <div class="col-4">
+          <img src="product-2.jpg" alt="">
+          <h4>Red Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 250</p>
+        </div>
+        <div class="col-4">
+          <img src="product-7.jpg" alt="">
+          <h4>HRX Running Shoes</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 999</p>
+        </div>
+        <div class="col-4">
+          <img src="product-6.jpg" alt="">
+          <h4>Gym Lower</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 399</p>
+        </div>
+        <div class="col-4">
+          <img src="product-8.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div>
+        <div class="col-4">
+          <img src="product-10.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div><div class="col-4">
+          <img src="product-3.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div>
+        <div class="col-4">
+          <img src="product-4.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div>
+        <div class="col-4">
+          <img src="product-11.jpg" alt="">
+          <h4>Roadster Watch</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>RS 799</p>
+        </div>
+      </div>
+
+    <!---------- About us 
+    <h2 class="t">About us</h2>
+    <div class="about">
+          <div class="col-5">
+            <i class="fa fa-quote-left"></i>
+            <p>this is all about us</p>
+            <img src="gallery-1.jpg">
+            <h3>Shaksham Sharma</h3>
+          </div>
+    </div>  
+    <div class="about">
+          <div class="col-5">
+            <i class="fa fa-quote-left"></i>
+            <p>this is all about us</p>
+            <img src="user-3.png".jpg">
+            <h3>Simran Yadav</h3>
+          </div>
+    </div>  
+    <div class="about">
+        
+          <div class="col-5">
+            <i class="fa fa-quote-left"></i>
+            <p>this is all about us</p>
+            <img src="gallery-1.jpg">
+            <h3>Siddharth Sharma</h3>
+          </div>
+        
+    </div>  -------------->
+
+    
+
+
+
+
+
+    <script src="scriptpe.js"></script>
+</body>
+</html>
